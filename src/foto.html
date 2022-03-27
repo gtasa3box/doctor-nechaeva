@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-<title>Кабинет доктора Нечаевой Нижний Новгород. Диагностика и лечение заболеваний взрослых и детей</title>
+<title>Фотогалерея кабинета</title>
 <meta name="description" content="Кабинет доктора Нечаевой Нижний Новгород. Диагностика и лечение заболеваний взрослых и детей" />
 <meta name="keywords" content="Доктор Нечаева, диагностика, лечение, Нижний Новгород, лечение детей, лечебная сауна, баня" />
-<meta property="og:url" content="https://doctornechaeva.ru" />
-<link rel="canonical" href="https://doctornechaeva.ru">
+<meta property="og:url" content="https://doctornechaeva.ru/foto" />
+<link rel="canonical" href="https://doctornechaeva.ru/foto">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 @include('partials/head.html')
+
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      @include('partials/intro.html')
-      @include('partials/effects.html')
-      @include('partials/testimony.html')
+      @include('partials/foto/foto-content.html')
     </main>
-
     @include('partials/footer.html')
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 
 </html>
