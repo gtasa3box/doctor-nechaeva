@@ -28,7 +28,7 @@ $(function() {
     if(/homeopathy/.test(loc)) {
       $('#nav-3').addClass('active');
     }
-    if(/doctor/.test(loc)) {
+    if(/doktor/.test(loc)) {
       $('#nav-4').addClass('active');
     }
     if(/zdravnitsa/.test(loc)) {
