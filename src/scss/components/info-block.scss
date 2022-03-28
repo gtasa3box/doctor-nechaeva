@@ -5,22 +5,47 @@
         background-color: white;
         padding: 20px 30px;
         overflow: hidden;
+        @media (max-width:600px) {
+            padding: 15px;
+        }
     }
     &__title {
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 30px;
+        @media (max-width:600px) {
+            font-size: 22px;
+        }
+        @media (max-width:420px) {
+            font-size: 18px;
+        }
         &_small {
             font-weight: bold;
             font-size: 14px;
+            @media (max-width:600px) {
+                font-size: 12px;
+            }
         }
         &_middle {
             font-size: 25px;
             line-height: 0.8;
+            @media (max-width:600px) {
+                font-size: 18px;
+            }
+            @media (max-width:420px) {
+                font-size: 14px;
+            }
         }
         &_pad {
             font-size: 20px;
             padding-left: 30px;
+            @media (max-width:600px) {
+                padding-left: 0;
+                font-size: 18px;
+            }
+            @media (max-width:420px) {
+                font-size: 16px;
+            }
             a {
                 text-decoration: underline;
                 color: #000;
@@ -41,6 +66,14 @@
         width: 107%;
         height: 258px;
         margin-bottom: 20px;
+        @media (max-width:980px) {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        @media (max-width:600px) {
+            height: 180px;
+        }
         &_contain {
             background-size: contain;
         }
@@ -50,6 +83,9 @@
         font-size: 14px;
         color: #000;
         line-height: 1.5;
+        @media (max-width:420px) {
+            font-size: 12px;
+        }
         a {
             text-decoration: underline;
             color: #000;
@@ -69,6 +105,9 @@
         justify-content: space-between;
         align-items: center;
         margin: 20px 0;
+        @media (max-width:980px) {
+            flex-direction: column;
+        }
         &-img {
             display: block;
             background-image: url(../img/doctor/doktor.jpg);
@@ -78,6 +117,10 @@
             height: 535px;
             flex: none;
             margin-right: 40px;
+            @media (max-width:980px) {
+                margin: 0;
+                margin-bottom: 40px;
+            }
         }
     }
     &__map {
