@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     &__content {
         display: flex;
         align-items: center;
@@ -8,6 +9,28 @@
         height: 76px;
     }
     &__nav {
-        
+        @media (max-width:930px) {
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            transform: translateX(100%);
+            pointer-events: none;
+            transition: 0.3s ease;
+            &.active {
+                transform: translateX(0);
+                pointer-events: initial;
+            }
+        }
+    }
+    &__burger {
+        display: none;
+        @media (max-width:930px) {
+            display: block;
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 12;
+        }
     }
 }

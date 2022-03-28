@@ -17,4 +17,7 @@ body {
         height: 100%;
         z-index: -1;
     }
+    &.hidden {
+        overflow: hidden;
+    }
 }
