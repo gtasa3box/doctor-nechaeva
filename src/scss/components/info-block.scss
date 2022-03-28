@@ -14,9 +14,22 @@
             font-weight: bold;
             font-size: 14px;
         }
+        &_middle {
+            font-size: 25px;
+            line-height: 0.8;
+        }
         &_pad {
             font-size: 20px;
             padding-left: 30px;
+            a {
+                text-decoration: underline;
+                color: #000;
+                transition: 0.3s ease;
+                &:hover {
+                    opacity: 0.8;
+                    text-decoration: none;
+                }
+            }
         }
     }
     &__img {
@@ -28,6 +41,9 @@
         width: 107%;
         height: 258px;
         margin-bottom: 20px;
+        &_contain {
+            background-size: contain;
+        }
     }
     &__text {
         margin-bottom: 20px;
@@ -47,5 +63,21 @@
             font-weight: bold;
         }
     }
-
+    //card
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        &-img {
+            display: block;
+            background-image: url(../img/doctor/doktor.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 350px;
+            height: 535px;
+            flex: none;
+            margin-right: 40px;
+        }
+    }
 }
