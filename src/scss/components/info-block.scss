@@ -1,0 +1,51 @@
+.info-block {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    &__content {
+        background-color: white;
+        padding: 20px 30px;
+        overflow: hidden;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        &_small {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        &_pad {
+            font-size: 20px;
+            padding-left: 30px;
+        }
+    }
+    &__img {
+        display: block;
+        margin: 0 -30px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 107%;
+        height: 258px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #000;
+        line-height: 1.5;
+        a {
+            text-decoration: underline;
+            color: #000;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+                text-decoration: none;
+            }
+        }
+        b {
+            font-weight: bold;
+        }
+    }
+
+}
