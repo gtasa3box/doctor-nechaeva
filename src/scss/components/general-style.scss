@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     position: relative;
+    padding-bottom: 30px;
     &::before {
         content: '';
         position: absolute;
