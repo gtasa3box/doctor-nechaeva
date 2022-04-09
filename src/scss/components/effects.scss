@@ -14,19 +14,36 @@
         font-family: 'Playfair Display', serif;
         font-weight: 600;
         font-style: italic;
-        font-size: 18px;
+        // font-size: 18px;
+        font-size: 36px;
         line-height: 1.2;
         background: rgb(5,149,69);
         background: linear-gradient(90deg, rgba(5,149,69,1) 0%, rgba(138,197,63,1) 100%);
         border-radius: 8px;
         padding: 2px 5px;
         margin-top: 40px;
+        text-align: center;
         &_red {
-            color: #d72927;
+            color: white;
+            font-size: 44px;
+            @media (max-width:600px) {
+                font-size: 26px;
+            }
+            p {
+                font-size: 36px;
+                margin-top: 20px;
+                @media (max-width:600px) {
+                    font-size: 22px;
+                    margin-top: 5px;
+                }
+            }
         }
         &_no-margin {
             margin-top: 20px;
             text-align: center;
+        }
+        &_small-text {
+            font-size: 25px;
         }
         &:first-child {
             @media (max-width:980px) {

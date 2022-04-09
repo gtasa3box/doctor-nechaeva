@@ -1,6 +1,9 @@
 .wrapper {
     max-width: 950px;
     margin: 0 auto;
+    @media (min-width:1240px) {
+        max-width: 1200px;
+    }
     @media (max-width:980px) {
         padding: 0 20px;
     }

@@ -16,8 +16,10 @@
         flex-direction: column;
         align-items: center;
         transition: 0.3s ease;
+        width: 33%;
         @media (max-width:600px) {
             margin-bottom: 40px;
+            width: 100%;
         }
         &:hover {
             transform: rotate(-3deg);
@@ -34,6 +36,7 @@
             border-bottom: 3px dotted;
             font-size: 25px;
             font-weight: bold;
+            white-space: nowrap;
         }
         &_white {
             color: white;
